@@ -1,0 +1,164 @@
+<!--SITE DE EXERCICIOS:  
+1- Calcule a média de diversas notas digitadas pelo usuário.
+
+2 – Faça um programa que entre com cinco números e imprima o quadrado de cada número.
+
+3 – Peça ao usuário para digitar 5 números em uma caixa de texto. Verifique qual é o maior número e exiba-o.
+
+4 – Peça ao usuário para digitar várias idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.
+
+5 – Crie um programa que entre com os dados de altura e sexo de 5 pessoas. Imprima na tela quantas pessoas são do sexo masculino e quantas pessoas são do sexo feminino. Mostre também qual é a maior altura e se essa altura é de um homem ou uma mulher.
+
+6 – Peça ao usuário para digitar vários nomes. Exiba na tela todos os nomes digitados, porém de maneira invertida (do último para o primeiro).
+
+7 – Peça para o usuário digitar uma data. Exiba separadamente o dia, o mês e o ano. (Obs.: não necessita de laço de repetição)
+-->
+<!DOCTYPE html>
+<html>
+<head>
+      <link href="exercicios.css" rel="stylesheet">
+
+
+
+      <title>Meu site muito foda</title>
+</head>
+<body>
+<h1>Exercicio 1</h1>
+<h2>digite as notas no campo abaixo (separadas por virgulas(exemplo: 1,2,3,4): </h2><br/><br/>
+
+<input id="notas" type="text" name="notas">
+<button onclick="calcularmedia()">calcular</button>
+
+<br/><br/><br/>
+<p id="mostramedia"></p>
+
+<br/><hr><br/>
+
+
+
+
+
+
+
+
+<h1>exercicio 2</h1>
+<h2>digite os 5 numeros em cada campo abaixo</h2><br/><br/>
+
+
+<input id="n1" type="number">
+<input id="n2" type="number">
+<input id="n3" type="number">
+<input id="n4" type="number">
+<input id="n5" type="number">
+<br/>
+<br/>
+<button onclick= "ex2()">Executar</button>
+<br/>
+<br/>
+<table border="1">
+      <tr><th id="shown1"></th><td id="respostan1"></td></tr>
+      <tr><th id="shown2"></th><td id="respostan2"></td></tr>
+      <tr><th id="shown3"></th><td id="respostan3"></td></tr>
+      <tr><th id="shown4"></th><td id="respostan4"></td></tr>
+      <tr><th id="shown5"></th><td id="respostan5"></td></tr>
+
+</table>
+
+<br/><hr><br/>
+
+
+
+
+
+
+
+
+
+<h1>Exercicio 3</h1>
+
+<h2>Digite apenas 5 números no campo abaixo separado por espaço (exemplo: 1 2 3 4 5)</h2>
+
+<input id="maior" type="text"><br/><br/>
+<button onclick="ex3()">Procurar maior</button>
+
+<p id="mostrarmaior"></p>
+
+<br/><hr><br/>
+
+
+
+
+
+
+
+
+
+
+<h1>Exercicio 4</h1>
+
+<h2>Digite varias idades separadas por espaço (exemplo: 1 2 3)</h2>
+<input id="idade" type="text">
+<button onclick="ex4()">Procurar maior</button>
+<p id="mostraridade"></p>
+
+<br/><hr><br/>
+
+
+
+
+
+
+
+
+
+
+<h1>Exercicio 5</h1>
+
+<h2>Digite 5 altura e sexo separadas por virgula(exemplo: 1.2,1.5,1.7 e M,M,F):</h2>
+<p>Altura</p>
+<input id="altura" type="text">
+<p>sexo</p>
+<input id="sexo" type="text"><br/><br/>
+<button onclick="ex5()"> calcular </button>
+
+<p id="resposta5"></p>
+
+<br/><hr><br/>
+
+
+
+
+
+<h1>Exercicio 6</h1>
+
+<h2>Digite vários nome separados por espaços (exemplo:Vitor Daniel Lucas)</h2>
+<input id="nomes" type="text">
+<button onclick="ex6()"> calcular </button>
+
+<p id="resposta6"></p>
+
+<br/><hr><br/>
+
+
+
+
+
+
+<h1>Exercicio 7</h1>
+
+<h2>Coloque uma data: </h2>
+<input id="data" type="date">
+<button onclick="ex7()"> calcular </button>
+<table class="tabelainvisivel">
+      <tr>
+<td><div id="dia" class="dividir"></div></td>
+<td><div id="mes" class="dividir"></div></td>
+<td><div id="ano" class="dividir"></div></td>
+      </tr>
+</table>
+<script src="exercicios.js"></script>
+</body>
+</html>
+
+
+
